@@ -1,1 +1,1 @@
-This school project will stay up for a wihle not sure how long
+This is a school project I will not change anything  nor I have any plans on using this name anymore
