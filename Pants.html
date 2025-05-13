@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en">
+        <meta name="Nordas shop" content="Nordas Pants">
+        <link rel="stylesheet" href="Pants.css">
+        <h1>Pants</h1>
+    <nav>
+        <div class="back">
+            <a href="file:///C:/Users/kings/OneDrive/Documentos/Web/Main_menu.html"><button><h2>Back</h2></button></a>
+        </div>
+    <div class="Filter">
+            <button onclick="filterRows('All')"><h2>All</h2></button>
+            <button onclick="filterRows('Men')"><h2>Men</h2></button>
+            <button onclick="filterRows('Women')"><h2>Women</h2></button>
+            <button onclick="filterRows('Kids')"><h2>Kids</h2></button>
+        </div>
+    </nav>
+    </head>
+    <body>
+      <div class="Rows">
+        <div class="Row_1">
+          <a href="https://www.adidas.es/pantalon-corto-train-essentials-woven-training/IC6976.html"><button><img src="Pantalon_corto_Train_Essentials_Woven_Training_Negro_IC6976_01_laydown.avif" class="Men"></button></a>
+          <a href="https://www.adidas.es/pantalon-corto-golf-ultimate365-8.5-inch/HR7939.html"><button><img src="Pantalon_corto_Golf_Ultimate365_8.5-Inch_Gris_HR7939_01_laydown.avif" class="Men"></button></a>
+          <a href="https://www.adidas.es/pantalon-corto-adicolor-classics-sprinter/HS2069.html"><button><img src="Pantalon_corto_Adicolor_Classics_Sprinter_Negro_HS2069_01_laydown.avif" class="Men"></button></a>
+          <a href="https://www.adidas.es/pantalon-corto-train-essentials-pique-training-3-bandas/IB8111.html"><button><img src="Pantalon_corto_Train_Essentials_Pique_Training_3_bandas_Negro_IB8111_01_laydown.avif" class="Men"></button></a>
+        </div>
+        <div class="Row_2">
+          <a href="https://www.adidas.es/pantalon-firebird-loose/IL3817.html"><button><img src="Pantalon_Firebird_Loose_Azul_IL3817_21_model.avif" class="Women"></button></a>
+          <a href="https://www.adidas.es/pantalon-train-essentials-woven-3-bandas/JD6523.html"><button><img src="Pantalon_Train_Essentials_Woven_3_bandas_Azul_JD6523_21_model.avif" class="Women"></button></a>
+          <a href="https://www.adidas.es/pantalon-adicolor-sst/IK6600.html"><button><img src="Pantalon_Adicolor_SST_Negro_IK6600_01_laydown.avif" class="Women"></button></a>
+          <a href="https://www.adidas.es/pantalon-pintuck-pull-on/HY4088.html"><button><img src="Pantalon_Pintuck_Pull-On_Azul_HY4088_01_laydown.avif" class="Women"></button></a>
+        </div>
+        <div class="Row_3">
+          <a href="https://www.adidas.es/pantalon-mercedes---amg-petronas-formula-one-team-dna/JV5431.html"><button><img src="PANTALON_MERCEDES_-_AMG_PETRONAS_FORMULA_ONE_TEAM_DNA_Negro_JV5431_01_laydown.avif" class="Kids"></button></a>
+          <a href="https://www.adidas.es/pantalon-essentials-adolescentes/JD2090.html"><button><img src="Pantalon_Essentials_Adolescentes_Negro_JD2090_21_model.avif" class="Kids"></button></a>
+          <a href="https://www.adidas.es/pantalon-adidas-originals-x-minecraft/JZ9935.html"><button><img src="Pantalon_adidas_Originals_x_Minecraft_Verde_JZ9935_01_laydown.avif" class="Kids"></button></a>
+          <a href="https://www.adidas.es/pantalon-ultimate-adjustable-adolescentes/IU3504.html"><button><img src="Pantalon_Ultimate_Adjustable_Adolescentes_Negro_IU3504_01_laydown.avif" class="Kids"></button></a>
+        </div>
+      </div>
+    </body>
+    <script>
+        function filterRows(category){
+          var elements = document.querySelectorAll('.Men, .Women, .Kids, img');
+          elements.forEach(function(element) {
+            if (category === 'All' || element.classList.contains(category)) {
+              element.style.display = "flex";
+            } else {
+              element.style.display = "none";
+            }
+          });
+        }
+      </script>
+    <footer>
+        
+    </footer>
+</html>

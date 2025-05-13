@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en">
+        <meta name="Nordas shop" content="Nordas Accesories">
+        <link rel="stylesheet" href="Accesories.css">
+        <h1>Accesories</h1>
+    <nav>
+        <div class="back">
+            <a href="file:///C:/Users/kings/OneDrive/Documentos/Web/Main_menu.html"><button><h2>Back</h2></button></a>
+        </div>
+    <div class="Filter">
+            <button onclick="filterRows('All')"><h2>All</h2></button>
+            <button onclick="filterRows('Bags')"><h2>Bags</h2></button>
+            <button onclick="filterRows('Hats')"><h2>Hats</h2></button>
+            <button onclick="filterRows('Glasses')"><h2>Glasses</h2></button>
+        </div>
+    </nav>
+    </head>
+    <body>
+      <div class="Rows">
+        <div class="Row_1">
+          <a href="https://www.nike.com/es/t/club-gorra-futura-wash-sin-estructura-XwgFr4/FB5368-657"><button><img src="U+NK+CLUB+CAP+U+CB+FUT+WSH+L.avif" class="Hats"></button></a>
+          <a href="https://www.adidas.es/bolso-cruzado-wabash-large/JD5446.html"><button><img src="Bolso_cruzado_Wabash_Large_Negro_JD5446_01_00_standard.avif" class="Bags"></button></a>
+          <a href="https://www.adidas.es/gafas-de-sol-originals-or0132/JK9814.html"><button><img src="Gafas_de_sol_Originals_OR0132_Negro_JK9814_02_hover_standard.avif" class="Glasses"></button></a>
+          <a href="https://www.nike.com/es/t/run-mochila-ebWbe9xe/AC4168-045"><button><img src="NIKE+COMMUTER+BACKPACK+15+L.avif" class="Bags"></button></a>
+        </div>
+        <div class="Row_2">
+          <a href="https://www.nike.com/es/t/liverpool-fc-jdi-mochila-nino-a-FS1cCT/HQ6719-010"><button><img src="LFC+Y+NK+JDI+MINI+BKPK.avif" class="Bags"></button></a>
+          <a href="https://www.adidas.es/gorra-adilenium-flat-brim-graphic/JW3988.html"><button><img src="Gorra_Adilenium_Flat_Brim_Graphic_Negro_JW3988_01_00_standard.avif" class="Hats"></button></a>
+          <a href="http://nike.com/es/t/jordan-gorra-de-visera-plana-de-punto-nino-a-VMl4r5/FQ0953-010"><button><img src="JERSEY+FLATBRIM+CAP.avif" class="Hats"></button></a>
+          <a href="https://www.adidas.es/gafas-de-sol-original-or0109/IV1259.html"><button><img src="Gafas_de_sol_Original_OR0109_Beige_IV1259_01_hover_standard.avif" class="Glasses"></button></a>
+        </div>
+        <div class="Row_3">
+          <a href="https://www.nike.com/es/t/jordan-rise-cap-gorra-regulable-VbMGs8/FD5186-010"><button><img src="J+RISE+CAP+S+CB+MTL+JM.avif" class="Hats"></button></a>
+          <a href="https://www.adidas.es/gafas-de-sol-original-or0109/IV1257.html"><button><img src="Gafas_de_sol_Originals_OR0132_Negro_JK9814_02_hover_standard.avif" class="Glasses"></button></a>
+          <a href="https://www.adidas.es/gafas-de-natacion-ripstream-starter/IK9659.html?pr=product_rr&slot=4&rec=ds"><button><img src="Gafas_de_natacion_Ripstream_Starter_Negro_IK9659_02_hover_standard.avif" class="Glasses"></button></a>
+          <a href="https://www.nike.com/es/t/utility-elite-mochila-P2r9J0/FN4173-010"><button><img src="NK+UTILITY+ELITE+BKPK+-+2.0.avif" class="Bags"></button></a>
+        </div>
+        <div class="Row_4">
+            <a href="https://www.adidas.es/gorra-mercedes---amg-petronas-formula-one-team-fan-cotton/JX1415.html"><button><img src="Gorra_Mercedes_-_AMG_Petronas_Formula_One_Team_Fan_Cotton_Beige_JX1415_01_00_standard.avif" class="Hats"></button></a>
+            <a href="https://www.nike.com/es/t/academy-team-mochila-Q4gn31/DV0761-410"><button><img src="NK+ACDMY+TEAM+BKPK+2.3.avif" class="Bags"></button></a>
+          </div>
+      </div>
+    </body>
+    <script>
+        function filterRows(category){
+          var elements = document.querySelectorAll('.Men, .Women, .Kids, img');
+          elements.forEach(function(element) {
+            if (category === 'All' || element.classList.contains(category)) {
+              element.style.display = "flex";
+            } else {
+              element.style.display = "none";
+            }
+          });
+        }
+      </script>
+    <footer>
+        
+    </footer>
+</html>
